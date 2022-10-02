@@ -29,7 +29,20 @@ const Play = ({ setMyChoice }) => {
             className="icon icon--rock"
           >Rock</div>
         </Link>
-      
+        <Link to="/game">
+          <div
+            data-id="Spock"
+            onClick={setChoice}
+            className="icon icon--spock"
+          >Spock</div>
+        </Link>
+        <Link to="/game">
+          <div
+            data-id="lizard"
+            onClick={setChoice}
+            className="icon icon--lizard"
+          >Lizard</div>
+        </Link>
     </div>
   );
 };
