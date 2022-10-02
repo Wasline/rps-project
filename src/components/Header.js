@@ -1,11 +1,9 @@
 import React from "react";
 
-
-export default function Header() {
-   let Header = ({ score }) => {
- return (
+const Header = ({ score }) => {
+  return (
     <div className="header">
-      <div className="name">
+      <div className="text">
         <span>Rock</span>
         <span>Paper</span>
         <span>Scissors</span>
@@ -14,9 +12,10 @@ export default function Header() {
       </div>
       <div className="score-box">
         <span>Score</span>
-        <div className="score-box-score">{score}</div>
+        <div className="score-box__score">{score}</div>
       </div>
     </div>
   );
-}
 };
+
+export default Header;
